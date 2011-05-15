@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  knoten1_id: 1
+  knoten2_id: 1
+  kantenlaenge: 1
+
+two:
+  knoten1_id: 1
+  knoten2_id: 1
+  kantenlaenge: 1

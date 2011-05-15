@@ -1,0 +1,2 @@
+module KantensHelper
+end

@@ -1,0 +1,23 @@
+<h1>Listing knotens</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @knotens.each do |knoten| %>
+  <tr>
+    <td><%= knoten.name %></td>
+    <td><%= link_to 'Show', knoten %></td>
+    <td><%= link_to 'Edit', edit_knoten_path(knoten) %></td>
+    <td><%= link_to 'Destroy', knoten, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Knoten', new_knoten_path %>

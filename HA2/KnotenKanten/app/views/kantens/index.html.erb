@@ -1,0 +1,27 @@
+<h1>Listing kantens</h1>
+
+<table>
+  <tr>
+    <th>Knoten1</th>
+    <th>Knoten2</th>
+    <th>Kantenlaenge</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @kantens.each do |kanten| %>
+  <tr>
+    <td><%= kanten.knoten1_id %></td>
+    <td><%= kanten.knoten2_id %></td>
+    <td><%= kanten.kantenlaenge %></td>
+    <td><%= link_to 'Show', kanten %></td>
+    <td><%= link_to 'Edit', edit_kanten_path(kanten) %></td>
+    <td><%= link_to 'Destroy', kanten, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Kanten', new_kanten_path %>
